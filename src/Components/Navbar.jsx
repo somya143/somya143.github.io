@@ -17,7 +17,7 @@ const Navbar = () => {
     const isLight = colorMode === "light"
 
   return (
-<>
+
     <VStack p={5}>
         <Flex w="100%">
          
@@ -37,17 +37,9 @@ const Navbar = () => {
         </Flex>
     </VStack>
    
-   <Router>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-   </Router>
+   
 
-   </>
+   
   )
 }
 
