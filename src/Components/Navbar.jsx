@@ -1,4 +1,5 @@
 import React from 'react'
+import Home from './Home';
 import About from './About';
 import TechStack from './Tech-Stack';
 import Skills from './Skills';
@@ -8,7 +9,7 @@ import Resume from "./Resume";
 import { Flex , VStack, Heading, IconButton, useColorMode, Spacer } from '@chakra-ui/react';
 import { Icon } from "@chakra-ui/icons";
 import {FaSun,FaMoon} from "react-icons/fa";
-import { Routes , Route , Link } from "react-router-dom";
+import { Routes , Route } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -25,9 +26,9 @@ const Navbar = () => {
          </Heading>
 
        <Spacer></Spacer>
-        
-         <IconButton ml={8}><About /> </IconButton>
-         <IconButton ml={8}> <TechStack /></IconButton>
+         <IconButton ml={8}><Home /></IconButton>
+         <IconButton ml={8}><About /></IconButton>
+         <IconButton ml={8}><TechStack /></IconButton>
          <IconButton ml={8}><Skills /></IconButton>
          <IconButton ml={8}><Projects /></IconButton>
          <IconButton ml={8}><Contact /></IconButton>
@@ -36,14 +37,15 @@ const Navbar = () => {
         </Flex>
     </VStack>
    
-   <Routes>
-    <Route path='/' element={<About />}></Route>
-    <Route path='/TechStack' element={<TechStack />}></Route>
-    <Route path='/Skills' element={<Skills />}></Route>
-    <Route path='/Projects' element={<Projects />}></Route>
-    <Route path='/Contact' element={<Contact />}></Route>
-    <Route path='/Resume' element={<Resume />}></Route>
-   </Routes>
+   <Router>
+    <Route></Route>
+    <Route></Route>
+    <Route></Route>
+    <Route></Route>
+    <Route></Route>
+    <Route></Route>
+    <Route></Route>
+   </Router>
 
    </>
   )
