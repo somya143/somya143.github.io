@@ -8,7 +8,7 @@ import Resume from "./Resume";
 import { Flex , VStack, Heading, IconButton, useColorMode, Spacer } from '@chakra-ui/react';
 import { Icon } from "@chakra-ui/icons";
 import {FaSun,FaMoon} from "react-icons/fa";
-import { Routes , Route } from "react-router-dom";
+import { Routes , Route , Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -26,8 +26,8 @@ const Navbar = () => {
 
        <Spacer></Spacer>
         
-         <IconButton ml={8}><About /></IconButton>
-         <IconButton ml={8}><TechStack /></IconButton>
+         <IconButton ml={8}><Link to="/"><About /></Link> </IconButton>
+         <IconButton ml={8}><Link to="/TechStack"> <TechStack /></Link></IconButton>
          <IconButton ml={8}><Skills /></IconButton>
          <IconButton ml={8}><Projects /></IconButton>
          <IconButton ml={8}><Contact /></IconButton>
