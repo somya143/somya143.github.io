@@ -37,12 +37,12 @@ const Navbar = () => {
     </VStack>
    
    <Routes>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
-    <Route></Route>
+    <Route path='/' element={<About />}></Route>
+    <Route path='/TechStack' element={<TechStack />}></Route>
+    <Route path='/Skills' element={<Skills />}></Route>
+    <Route path='/Projects' element={<Projects />}></Route>
+    <Route path='/Contact' element={<Contact />}></Route>
+    <Route path='/Resume' element={<Resume />}></Route>
    </Routes>
 
    </>
