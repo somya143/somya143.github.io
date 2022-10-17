@@ -83,7 +83,7 @@ export default function Navbar() {
                   duration={500}
                 >
                   {" "}
-                  Prajwal{" "}
+                  Somya Ranjna Singh{" "}
                 </Link>
               </Heading>
             </Box>
@@ -145,19 +145,15 @@ export default function Navbar() {
                 <MenuItem>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/in/prajwal-jaiswal-3772aa215/"
+                    href="https://www.linkedin.com/in/somyaranjansingh96/"
                   >
                     Linkedin
                   </a>
                 </MenuItem>
-                <MenuItem>
-                  <a target="_blank" href="https://twitter.com/Prajwal_jais">
-                    Twitter
-                  </a>
-                </MenuItem>
+                
                 <MenuDivider />
                 <MenuItem>
-                  <a target="_blank" href="https://github.com/J-Prajwal">
+                  <a target="_blank" href="https://github.com/somya143">
                     Github
                   </a>
                 </MenuItem>
