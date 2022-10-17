@@ -107,6 +107,7 @@ export default function About() {
         {colorMode == "dark" ? (
           <Image
             objectFit={"cover"}
+            rounded={"full"}
             className="zoom"
             width={["xs", "lg"]}
             height={["xs", "lg"]}
@@ -117,6 +118,7 @@ export default function About() {
         ) : (
           <Image
             alt={"Login Image"}
+            rounded={"full"}
             className="zoom"
             objectFit={"cover"}
             width={["xs", "lg"]}
