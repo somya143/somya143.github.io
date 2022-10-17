@@ -9,7 +9,7 @@ import Resume from "./Resume";
 import { Flex , VStack, Heading, IconButton, useColorMode, Spacer } from '@chakra-ui/react';
 import { Icon } from "@chakra-ui/icons";
 import {FaSun,FaMoon} from "react-icons/fa";
-import { Routes , Route } from "react-router-dom";
+
 
 const Navbar = () => {
 
