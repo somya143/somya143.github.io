@@ -1,46 +1,181 @@
-import React from 'react'
-import Home from './Home';
-import About from './About';
-import TechStack from './Tech-Stack';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
-import Resume from "./Resume";
-import { Flex , VStack, Heading, IconButton, useColorMode, Spacer } from '@chakra-ui/react';
-import { Icon } from "@chakra-ui/icons";
-import {FaSun,FaMoon} from "react-icons/fa";
+import {
+  Heading,
+  Box,
+  Flex,
+  Avatar,
+  HStack,
+  IconButton,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuDivider,
+  useDisclosure,
+  useColorMode,
+  useColorModeValue,
+  Stack,
+  Icon,
+} from "@chakra-ui/react";
+import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Link } from "react-scroll";
 
+const Links = ["About", "Skills", "Contact", "Projects", "Testimonials"];
 
-const Navbar = () => {
+const NavLink = ({ children }) => (
+  <Link
+    style={{ cursor: "pointer" }}
+    px={2}
+    py={1}
+    rounded={"md"}
+    _hover={{
+      textDecoration: "none",
+      bg: useColorModeValue("gray.200", "gray.700"),
+    }}
+    activeClass="active"
+    to={children}
+    spy={true}
+    smooth={true}
+    offset={-100}
+    duration={500}
+  >
+    {children}
+  </Link>
+);
 
-    const { colorMode , toggleColorMode} = useColorMode();
-    const isLight = colorMode === "light"
-
+export default function Navbar() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-
-    <VStack p={5}>
-        <Flex w="100%">
-         
-         <Heading ml="8" size="md" fontSize="2xl" color="cyan.400">
-          Somya Ranjan Singh
-         </Heading>
-
-       <Spacer></Spacer>
-         <IconButton ml={8}><Home /></IconButton>
-         <IconButton ml={8}><About /></IconButton>
-         <IconButton ml={8}><TechStack /></IconButton>
-         <IconButton ml={8}><Skills /></IconButton>
-         <IconButton ml={8}><Projects /></IconButton>
-         <IconButton ml={8}><Contact /></IconButton>
-         <IconButton ml={8}><Resume /></IconButton>
-        <IconButton ml={8} icon={isLight ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
+    <>
+      <Box
+        bg={useColorModeValue("gray.100", "gray.900")}
+        px={4}
+        w={"100%"}
+        position={"fixed"}
+        style={{ zIndex: "999" }}
+      >
+        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+          <IconButton
+            size={"md"}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={"Open Menu"}
+            display={{ md: "none" }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          <HStack spacing={8} alignItems={"center"}>
+            <Box>
+              <Heading size={"lg"}>
+                <Link
+                  style={{ cursor: "pointer" }}
+                  px={2}
+                  py={1}
+                  rounded={"md"}
+                  _hover={{
+                    textDecoration: "none",
+                    bg: useColorModeValue("gray.200", "gray.700"),
+                  }}
+                  activeClass="active"
+                  to={"About"}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  {" "}
+                  Prajwal{" "}
+                </Link>
+              </Heading>
+            </Box>
+            <HStack
+              as={"nav"}
+              spacing={4}
+              display={{ base: "none", md: "flex" }}
+            >
+              {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </HStack>
+          </HStack>
+          <Flex alignItems={"center"} gap={5}>
+            <Button onClick={toggleColorMode}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+            <Button
+              rounded={"full"}
+              bg={"blue.400"}
+              color={"white"}
+              _hover={{
+                bg: "blue.500",
+              }}
+            >
+              <Link
+                style={{ cursor: "pointer" }}
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                  bg: useColorModeValue("gray.200", "gray.700"),
+                }}
+                activeClass="active"
+                to={"Contact"}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </Button>
+            <Menu>
+              <MenuButton
+                as={Button}
+                rounded={"full"}
+                variant={"link"}
+                cursor={"pointer"}
+                minW={0}
+              >
+                <Avatar
+                  size={"sm"}
+                  src={"https://i.postimg.cc/J0ff2fwn/main-pic.jpg"}
+                />
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/prajwal-jaiswal-3772aa215/"
+                  >
+                    Linkedin
+                  </a>
+                </MenuItem>
+                <MenuItem>
+                  <a target="_blank" href="https://twitter.com/Prajwal_jais">
+                    Twitter
+                  </a>
+                </MenuItem>
+                <MenuDivider />
+                <MenuItem>
+                  <a target="_blank" href="https://github.com/J-Prajwal">
+                    Github
+                  </a>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Flex>
         </Flex>
-    </VStack>
-   
-   
 
-   
-  )
+        {isOpen ? (
+          <Box pb={4} display={{ md: "none" }}>
+            <Stack as={"nav"} spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </Stack>
+          </Box>
+        ) : null}
+      </Box>
+    </>
+  );
 }
-
-export default Navbar
