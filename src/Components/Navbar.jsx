@@ -138,7 +138,7 @@ export default function Navbar() {
               >
                 <Avatar
                   size={"sm"}
-                  src={"https://i.postimg.cc/J0ff2fwn/main-pic.jpg"}
+                  src={"https://i.postimg.cc/28kTFtQs/IMG-20221006-142820.jpg"}
                 />
               </MenuButton>
               <MenuList>
