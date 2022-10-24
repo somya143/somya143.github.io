@@ -232,16 +232,11 @@ const Projects = () => {
         <GridItem>
           <Card
             img={
-              "https://i.postimg.cc/9XwKxJTB/zee5.png"
+              "https://i.postimg.cc/fL8HyS65/zee2.jpg"
             }
             tag={["Collaborative", "Crowd-Funding"]}
             tsTags={[
-              "React-Js",
-              "Redux",
-              "Chakra-Ui",
-              "Axios",
-              "JSON-Server",
-              "React-Slider",
+              "HTML", "CSS", "JavaScript", "ES-6", "LocalStorage"
             ]}
             heading={"ZEE5 clone"}
             content={
