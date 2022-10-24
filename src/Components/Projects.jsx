@@ -78,10 +78,10 @@ export const BlogAuthor = (props) => {
 const Projects = () => {
   return (
     <Container maxW={"7xl"} p="12" id="Projects">
-      <Heading as="h1" textTransform={"capitalize"}>
-        My latest project
-      </Heading>
-      <Box
+      {/* <Heading as="h1" textTransform={"capitalize"}>
+        My projects
+      </Heading> */}
+      {/* <Box
         marginTop={{ base: "1", sm: "5" }}
         display="flex"
         flexDirection={{ base: "column", sm: "row" }}
@@ -93,18 +93,18 @@ const Projects = () => {
           marginRight="3"
           position="relative"
           alignItems="center"
-        >
-          <Box
+        > */}
+          {/* <Box
             width={{ base: "100%", sm: "85%" }}
             zIndex="2"
             marginLeft={{ base: "0", sm: "5%" }}
             marginTop="5%"
-          >
-            <Link
+          > */}
+            {/* <Link
               textDecoration="none"
               _hover={{ textDecoration: "none" }}
               target="_blank"
-              href={"https://classy-druid-0cbd3c.netlify.app/"}
+              href={"https://candid-ganache-399b55.netlify.app/"}
             >
               <Image
               className="zoom"
@@ -115,9 +115,9 @@ const Projects = () => {
                 alt="some good alt text"
                 objectFit="contain"
               />
-            </Link>
-          </Box>
-          <Box zIndex="1" width="100%" position="absolute" height="100%">
+            </Link> */}
+          {/* </Box> */}
+          {/* <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
               bgGradient={useColorModeValue(
                 "radial(orange.600 1px, transparent 1px)",
@@ -207,9 +207,9 @@ const Projects = () => {
             </Button>
           </Stack>
         </Box>
-      </Box>
+      </Box> */}
       <Heading as="h2" marginTop="5">
-        Some Of The Other Projects
+        My Projects
       </Heading>
       <Divider marginTop="5" />
       <Grid
@@ -218,21 +218,21 @@ const Projects = () => {
       >
         <GridItem>
           <Card
-            img={"https://i.postimg.cc/9fMV0ZkH/mf.jpg"}
+            img={"https://i.postimg.cc/fbMsDHgn/milaap.jpg"}
             tag={["Collaborative", "E-Commerce"]}
             tsTags={["HTML", "CSS", "JavaScript", "ES-6", "LocalStorage"]}
-            heading={"Max Fashion Clone"}
+            heading={"Milaap crowdfunding clone"}
             content={
-              "This is a clone of Max Fashion with it's simple and eye-cathcing UI."
+              "A clone of India's most trusted Crowd-Funding platform Milaap.org"
             }
-            deploy={"https://maxfashion-clonelc.netlify.app/index.html"}
-            git={"https://github.com/J-Prajwal/max-fashion-clone"}
+            deploy={"https://candid-ganache-399b55.netlify.app/"}
+            git={"https://github.com/akshay-puranik/unkempt-meal-6720"}
           />
         </GridItem>
         <GridItem>
           <Card
             img={
-              "https://i.postimg.cc/261j78M2/Annotation-2022-09-08-202931.jpg"
+              "https://i.postimg.cc/rwbBpxCj/zee.png"
             }
             tag={["Collaborative", "Crowd-Funding"]}
             tsTags={[
@@ -243,12 +243,12 @@ const Projects = () => {
               "JSON-Server",
               "React-Slider",
             ]}
-            heading={"Ketto India Clone"}
+            heading={"ZEE5 clone"}
             content={
-              "A clone of India's most trusted Crowd-Funding platform ketto.org"
+              "A clone of  an Indian subscription video on-demand and over-the-top streaming service, run by Zee Entertainment Enterprises."
             }
-            deploy={"https://ketto-true-mine3269.netlify.app/"}
-            git={"https://github.com/J-Prajwal/ketto-cw--true-mine-3269"}
+            deploy={"https://legendary-brigadeiros-fb6721.netlify.app/"}
+            git={"https://github.com/somya143/chemical-rake-3857"}
           />
         </GridItem>
         <GridItem>
