@@ -232,7 +232,7 @@ const Projects = () => {
         <GridItem>
           <Card
             img={
-              "https://i.postimg.cc/rwbBpxCj/zee.png"
+              "https://i.postimg.cc/9XwKxJTB/zee5.png"
             }
             tag={["Collaborative", "Crowd-Funding"]}
             tsTags={[
