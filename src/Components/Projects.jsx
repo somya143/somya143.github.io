@@ -247,7 +247,7 @@ const Projects = () => {
           />
         </GridItem>
         <GridItem>
-          <Card
+          {/* <Card
             img={"https://i.postimg.cc/RhfJYj1d/ie.jpg"}
             tag={["Collaborative", "News"]}
             tsTags={["React", "CSS", "REST-API"]}
@@ -257,10 +257,10 @@ const Projects = () => {
             }
             deploy={"https://indianexpressclone.netlify.app/"}
             git={"https://github.com/J-Prajwal/indianExpress"}
-          />
+          /> */}
         </GridItem>
         <GridItem>
-          <Card
+          {/* <Card
             img={"https://i.postimg.cc/Rhcqdw9b/mb.jpg"}
             tag={["Solo", "E-Commerce"]}
             tsTags={["HTML", "CSS", "JavaScript", "ES-6"]}
@@ -270,7 +270,7 @@ const Projects = () => {
             }
             deploy={"https://j-prajwal.github.io/movieBookingApp/"}
             git={"https://github.com/J-Prajwal/movieBookingApp"}
-          />
+          /> */}
         </GridItem>
       </Grid>
     </Container>
