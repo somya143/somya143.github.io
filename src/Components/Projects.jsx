@@ -118,17 +118,17 @@ const Projects = () => {
           />
         </GridItem>
         <GridItem>
-          {/* <Card
-            img={"https://i.postimg.cc/RhfJYj1d/ie.jpg"}
-            tag={["Collaborative", "News"]}
-            tsTags={["React", "CSS", "REST-API"]}
-            heading={"Indian Express Clone"}
+          <Card
+            img={"https://i.postimg.cc/cJ2ypr2M/youtube.png"}
+            tag={["Solo", "Youtube"]}
+            tsTags={["HTML","CSS","JAVASCRIPT","localStorage","ES-6"]}
+            heading={"Youtube app clone"}
             content={
-              "First collaborative project on React-Js, which came with a lot of challenges."
+              "This is a clone of Youtube."
             }
-            deploy={"https://indianexpressclone.netlify.app/"}
-            git={"https://github.com/J-Prajwal/indianExpress"}
-          /> */}
+            deploy={"https://rad-croquembouche-3766d0.netlify.app/"}
+            git={"https://github.com/somya143/youtube"}
+          />
         </GridItem>
         <GridItem>
           {/* <Card
