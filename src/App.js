@@ -3,7 +3,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
-import { Calendar } from "./Components/Calender";
+import { Calendar } from "./Github/Calender";
 
 function App() {
   return (
