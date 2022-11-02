@@ -1,7 +1,7 @@
 import React from "react";
 import GitHubCalendar from 'react-github-calendar';
 import ReactTooltip from 'react-tooltip';
-import './Calendar.css';
+import './Calender.css';
 
 export const Calendar = () => {
 
