@@ -30,7 +30,7 @@ export const Calendar = () => {
                 <div className="calendarBox">
                     <h3>GitHub Calender</h3>
                     <GitHubCalendar
-                        username="lokesh-patidar"
+                        username="somya143"
                         color="yellow"
                         transformData={selectLastHalfYear}
                         hideTotalCount
@@ -46,17 +46,17 @@ export const Calendar = () => {
             </div>
             <div className="graph-1">
                 <p align="center">
-                    <a href="https://github.com/lokesh-patidar"><span>
-                        <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lokesh-patidar&theme=dracula&bg_color=0D1117" />
+                    <a href="https://github.com/somya143"><span>
+                        <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=somya143&theme=dracula&bg_color=0D1117" />
                     </span></a> 
                 </p>
             </div>
 
             <div className="graph">
             <p align="center">
-                <a href="https://github.com/lokesh-patidar/github-readme-activity-graph">
-                    <img alt="lokesh-patidar Activity Graph"
-                        src="https://activity-graph.herokuapp.com/graph?username=lokesh-patidar&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" />
+                <a href="https://github.com/somya143/github-readme-activity-graph">
+                    <img alt="Somya Singh Activity Graph"
+                        src="https://activity-graph.herokuapp.com/graph?username=somya143&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" />
                 </a>
                 </p>
             </div>
