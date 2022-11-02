@@ -119,7 +119,7 @@ const Projects = () => {
         </GridItem>
         <GridItem>
           <Card
-            img={"https://i.postimg.cc/cJ2ypr2M/youtube.png"}
+            img={"https://i.postimg.cc/CxCRLVSq/youtube1.png"}
             tag={["Solo", "Youtube"]}
             tsTags={["HTML","CSS","JAVASCRIPT","localStorage","ES-6"]}
             heading={"Youtube app clone"}
