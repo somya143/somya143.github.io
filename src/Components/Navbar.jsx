@@ -20,7 +20,7 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-scroll";
 
-const Links = ["About", "Skills", "Projects", "Resume", "Contact"];
+const Links = ["About", "Skills","Projects", "Resume","Contact"];
 
 const NavLink = ({ children }) => (
   <Link
@@ -100,23 +100,6 @@ export default function Navbar() {
           <Flex alignItems={"center"} gap={5}>
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            </Button>
-
-            <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
-            >
-              <Link
-                style={{ textDecoration: "none" }}
-                href="https://drive.google.com/file/d/1kXEj9rY4ceJuA4temChJ-qZVIxgcPlzu/view?usp=sharing"
-                target={"_blank"}
-              >
-                My Resume
-              </Link>
             </Button>
             <Button
               rounded={"full"}
