@@ -131,17 +131,17 @@ const Projects = () => {
           />
         </GridItem>
         <GridItem>
-          {/* <Card
-            img={"https://i.postimg.cc/Rhcqdw9b/mb.jpg"}
-            tag={["Solo", "E-Commerce"]}
-            tsTags={["HTML", "CSS", "JavaScript", "ES-6"]}
-            heading={"Movie Booking Application"}
+        <Card
+            img={"https://www.yoox.com/images/yoox80/banners/6824_2_XmasLaunch_WM_Main.jpg?634485886869569819#width=1380&height=637"}
+            tag={["Collaborative", "Wardrobe"]}
+            tsTags={["Reactjs","Redux","Nodejs","Expressjs","MongoDb","CSS","ChakraUi","Styled-Components"]}
+            heading={"Wardrobe.com"}
             content={
-              "Simple yet one of the Solo project that has a lot of logics included."
+              "This is an e-Commerce website"
             }
-            deploy={"https://j-prajwal.github.io/movieBookingApp/"}
-            git={"https://github.com/J-Prajwal/movieBookingApp"}
-          /> */}
+            deploy={"https://fixed-thread-889.netlify.app/"}
+            git={"https://github.com/somya143/wardrobe.com"}
+          />
         </GridItem>
       </Grid>
     </Container>
