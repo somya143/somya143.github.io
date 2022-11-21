@@ -83,7 +83,7 @@ export default function Navbar() {
                   duration={500}
                 >
                   {" "}
-                  Somya Ranjna Singh{" "}
+                  Somya Ranjan Singh{" "}
                 </Link>
               </Heading>
             </Box>
