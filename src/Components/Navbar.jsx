@@ -20,7 +20,7 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-scroll";
 
-const Links = ["About", "Skills","Projects", "Resume","Contact"];
+const Links = ["About", "Skills","Projects","Resume","Contact"];
 
 const NavLink = ({ children }) => (
   <Link

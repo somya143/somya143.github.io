@@ -2,12 +2,32 @@ import React from 'react'
 
 const Resume = () => {
 
-  const downloadButton = () => {
-    window.location.href = "https://drive.google.com/file/d/1kXEj9rY4ceJuA4temChJ-qZVIxgcPlzu/view?usp=sharing"
+  const downloadResume = () => {
+    fetch('Somya Ranjan Singh.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Somya Ranjan Singh.pdf';
+          alink.click();
+      })
+  })
   }
-
+  
   return (
-    <button onClick={downloadButton}>Resume</button>
+    <Button
+    rounded={"full"}
+    bg={"blue.400"}
+    color={"white"}
+    _hover={{
+      bg: "blue.500",
+    }}
+    onClick={downloadResume}
+  >
+    My Resume
+  </Button>
   )
 }
 

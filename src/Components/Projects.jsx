@@ -94,7 +94,7 @@ const Projects = () => {
             tsTags={["HTML", "CSS", "JavaScript", "ES-6", "LocalStorage"]}
             heading={"Milaap crowdfunding clone"}
             content={
-              "A clone of India's most trusted Crowd-Funding platform Milaap.org"
+              "A clone of India's most trusted Crowd-Funding platform Milaap.org. This app helps needy as well as other business people to raise funds for the needful things"
             }
             deploy={"https://candid-ganache-399b55.netlify.app/"}
             git={"https://github.com/akshay-puranik/unkempt-meal-6720"}
@@ -124,7 +124,7 @@ const Projects = () => {
             tsTags={["HTML","CSS","JAVASCRIPT","localStorage","ES-6"]}
             heading={"Youtube app clone"}
             content={
-              "This is a clone of Youtube."
+              "This is Youtube app which we know a video searching app, which lets you watch live streaming videos and well as other videos. "
             }
             deploy={"https://rad-croquembouche-3766d0.netlify.app/"}
             git={"https://github.com/somya143/youtube"}
@@ -137,7 +137,7 @@ const Projects = () => {
             tsTags={["Reactjs","Redux","Nodejs","Expressjs","MongoDb","CSS","ChakraUi","Styled-Components"]}
             heading={"Wardrobe.com"}
             content={
-              "This is an e-Commerce website"
+              "This is an e-Commerce website wardrobe.com. This app lets you search the best product for yourself and purchase the clothes and other related stuffs."
             }
             deploy={"https://fixed-thread-889.netlify.app/"}
             git={"https://github.com/somya143/wardrobe.com"}
