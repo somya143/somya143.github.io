@@ -98,9 +98,11 @@ export default function Navbar() {
             </HStack>
           </HStack>
           <Flex alignItems={"center"} gap={5}>
+
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
+
             <Button
               rounded={"full"}
               bg={"blue.400"}
@@ -128,6 +130,7 @@ export default function Navbar() {
                 Contact
               </Link>
             </Button>
+
             <Menu>
               <MenuButton
                 as={Button}

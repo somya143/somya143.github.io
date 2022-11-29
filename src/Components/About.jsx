@@ -12,8 +12,25 @@ import {
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import Typed from "react-typed";
 
+
+
 export default function About() {
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const downloadResume = () => {
+    fetch('Somya Ranjan Singh.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Somya Ranjan Singh.pdf';
+          alink.click();
+      })
+  })
+  }
+
   return (
     <Stack
       minH={"100vh"}
@@ -66,14 +83,9 @@ export default function About() {
               _hover={{
                 bg: "blue.500",
               }}
+              onClick={downloadResume}
             >
-              <Link
-                style={{ textDecoration: "none" }}
-                href="https://drive.google.com/file/d/1kXEj9rY4ceJuA4temChJ-qZVIxgcPlzu/view?usp=sharing"
-                target={"_blank"}
-              >
-                My Resume
-              </Link>
+              My Resume
             </Button>
             <Button rounded={"full"}>
               <Link
