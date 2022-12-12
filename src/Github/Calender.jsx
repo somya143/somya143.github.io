@@ -52,14 +52,14 @@ export const Calendar = () => {
                 </p>
             </div>
 
-            <div className="graph">
+            {/* <div className="graph">
             <p align="center">
                 <a href="https://github.com/somya143/github-readme-activity-graph">
                     <img alt="Somya Singh Activity Graph"
                         src="https://activity-graph.herokuapp.com/graph?username=somya143&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" />
                 </a>
                 </p>
-            </div>
+            </div> */}
             <hr id="projectsPageSection" />
         </div>
     );

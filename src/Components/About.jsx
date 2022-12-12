@@ -72,8 +72,13 @@ export default function About() {
             </Text>
           </Heading>
           <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            A passionate full-stack web developer, who loves to buid cool
-            projects and work in a team.
+            An Analytical and detail-oriented Full Stack Web Developer capable of writing production 
+            ready code. Passionate about coding and learning new technologies. Looking for a challenging
+            role in a growth oriented organisation.
+          </Text>
+          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+            Collaborated in more than 6+ projects and has made 5 individual project and several mini 
+            projects.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button
@@ -87,7 +92,7 @@ export default function About() {
             >
               My Resume
             </Button>
-            <Button rounded={"full"}>
+            {/* <Button rounded={"full"}>
               <Link
                 style={{ textDecoration: "none" }}
                 target={"_blank"}
@@ -95,7 +100,7 @@ export default function About() {
               >
                 My Projects
               </Link>
-            </Button>
+            </Button> */}
           </Stack>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button>
