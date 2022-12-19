@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
+import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
 import { Calendar } from "./Github/Calender";
@@ -13,6 +14,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+       
         <Calendar />
         <Stats />
         <Contact />

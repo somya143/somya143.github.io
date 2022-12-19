@@ -20,7 +20,7 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-scroll";
 
-const Links = ["About", "Skills","Projects","Resume","Contact"];
+const Links = ["About", "Skills","Projects","Contact","Resume"];
 
 const NavLink = ({ children }) => (
   <Link
@@ -65,7 +65,7 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box>
-              <Heading size={"lg"}>
+              <Heading size="md">
                 <Link
                   style={{ cursor: "pointer" }}
                   px={2}
@@ -83,7 +83,7 @@ export default function Navbar() {
                   duration={500}
                 >
                   {" "}
-                  Somya Ranjan Singh{" "}
+                  Somya Singh{" "}
                 </Link>
               </Heading>
             </Box>

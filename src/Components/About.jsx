@@ -92,15 +92,7 @@ export default function About() {
             >
               My Resume
             </Button>
-            {/* <Button rounded={"full"}>
-              <Link
-                style={{ textDecoration: "none" }}
-                target={"_blank"}
-                href="https://github.com/somya143?tab=repositories"
-              >
-                My Projects
-              </Link>
-            </Button> */}
+            
           </Stack>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button>
