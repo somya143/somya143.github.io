@@ -17,6 +17,7 @@ import {
   useClipboard,
   useColorModeValue,
   VStack,
+  Text
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
@@ -99,6 +100,9 @@ export default function Contact() {
                 justify="space-around"
                 direction={{ base: "row", md: "column" }}
               >
+                <Text>
+                 +917004206146
+                </Text>
                 <Tooltip
                   label={hasCopied ? "Email Copied!" : "Copy Email"}
                   closeOnClick={false}
