@@ -1,34 +1,29 @@
-import React from 'react'
+import React from "react";
+import resume from "../Assets/Somya_Ranjan_Singh_Resume.pdf"
 
-const Resume = () => {
-
-  const downloadResume = () => {
-    fetch('Somya_Ranjan_Singh_Resume.pdf').then(response => {
-      response.blob().then(blob => {
-          // Creating new object of PDF file
-          const fileURL = window.URL.createObjectURL(blob);
-          // Setting various property values
-          let alink = document.createElement('a');
-          alink.href = fileURL;
-          alink.download = 'Somya_Ranjan_Singh_Resume.pdf';
-          alink.click();
-      })
-  })
-  }
-  
+export default function Resume(){
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/119HM9qhLh58m_phDrulMujisbgc9x7CR/view?usp=sharing"
+    );
+  };
   return (
-    <Button
-    rounded={"full"}
-    bg={"blue.400"}
-    color={"white"}
-    _hover={{
-      bg: "blue.500",
-    }}
-    onClick={downloadResume}
-  >
-    My Resume
-  </Button>
+    <a
+                href={resume}
+                target="_blank"
+                download="Somya_Ranjan_Singh_Resume"
+                rel="noreferrer"
+              >
+                <Button
+                  backgroundColor="#343e47"
+                  color="#ffffff"
+                  fontSize={18}
+                  borderRadius={10}
+                  _hover={{ backgroundColor: "#5b84b1ff" }}
+                  onClick={handleClick}
+                >
+                  Get Resume
+                </Button>
+              </a>
   )
 }
-
-export default Resume
