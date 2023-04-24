@@ -10,7 +10,7 @@ const Resume = () => {
           // Setting various property values
           let alink = document.createElement('a');
           alink.href = fileURL;
-          alink.download = 'Somya_Ranjan_Singh.pdf';
+          alink.download = 'Somya_Ranjan_Singh_Resume.pdf';
           alink.click();
       })
   })
