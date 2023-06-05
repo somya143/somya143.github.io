@@ -1,15 +1,15 @@
 import React from "react";
-import resume from "../Assets/Somya_Ranjan_Singh_Resume.pdf"
+import {Button} from "@chakra-ui/react"
 
 export default function Resume(){
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/file/d/119HM9qhLh58m_phDrulMujisbgc9x7CR/view?usp=sharing"
+      "https://drive.google.com/file/d/1FHVSltYmkSymlZNpNeo6tDHvgC3J1zHv/view?usp=sharing"
     );
   };
   return (
     <a
-                href={resume}
+                href="Somya_Ranjan_Singh_Resume.pdf"
                 target="_blank"
                 download="Somya_Ranjan_Singh_Resume"
                 rel="noreferrer"
@@ -19,7 +19,7 @@ export default function Resume(){
                   color="#ffffff"
                   fontSize={18}
                   borderRadius={10}
-                  _hover={{ backgroundColor: "#5b84b1ff" }}
+                  _hover={{ backgroundColor: "#4299E1" }}
                   onClick={handleClick}
                 >
                   Get Resume

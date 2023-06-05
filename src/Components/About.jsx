@@ -11,25 +11,13 @@ import {
 } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import Typed from "react-typed";
+import Resume from "./Resume";
 
 
 
 export default function About() {
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const downloadResume = () => {
-    fetch('Somya Ranjan Singh.pdf').then(response => {
-      response.blob().then(blob => {
-          // Creating new object of PDF file
-          const fileURL = window.URL.createObjectURL(blob);
-          // Setting various property values
-          let alink = document.createElement('a');
-          alink.href = fileURL;
-          alink.download = 'Somya Ranjan Singh.pdf';
-          alink.click();
-      })
-  })
-  }
 
   return (
     <Stack
@@ -81,17 +69,8 @@ export default function About() {
             projects.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
-              onClick={downloadResume}
-            >
-              My Resume
-            </Button>
+            
+            <Resume />
             
           </Stack>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
